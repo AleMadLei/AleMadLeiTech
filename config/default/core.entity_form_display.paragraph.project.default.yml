@@ -1,0 +1,70 @@
+uuid: 3f4a82dc-95c6-432a-8123-cdf3efb27e1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.project.field_accomplishments
+    - field.field.paragraph.project.field_dates
+    - field.field.paragraph.project.field_service_providers
+    - field.field.paragraph.project.field_technologies
+    - field.field.paragraph.project.field_urls
+    - paragraphs.paragraphs_type.project
+  module:
+    - datetime_range
+    - link
+    - text
+id: paragraph.project.default
+targetEntityType: paragraph
+bundle: project
+mode: default
+content:
+  field_accomplishments:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_dates:
+    type: daterange_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_service_providers:
+    type: entity_reference_autocomplete
+    weight: 12
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_technologies:
+    type: entity_reference_autocomplete
+    weight: 11
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_urls:
+    type: link_default
+    weight: 13
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

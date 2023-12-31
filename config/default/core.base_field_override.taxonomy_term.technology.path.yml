@@ -1,0 +1,20 @@
+uuid: ed1a615c-493c-41c5-890a-b738150e80a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.technology
+  module:
+    - path
+id: taxonomy_term.technology.path
+field_name: path
+entity_type: taxonomy_term
+bundle: technology
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

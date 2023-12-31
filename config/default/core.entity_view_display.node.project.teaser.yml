@@ -1,0 +1,47 @@
+uuid: c1424e01-44af-49d4-8b03-a1c8e5fdd6ce
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project.field_accomplishments
+    - field.field.node.project.field_company
+    - field.field.node.project.field_dates
+    - field.field.node.project.field_position
+    - field.field.node.project.field_service_providers
+    - field.field.node.project.field_technologies
+    - field.field.node.project.field_urls
+    - node.type.project
+  module:
+    - manage_display
+id: node.project.teaser
+targetEntityType: node
+bundle: project
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -49
+    region: content
+hidden:
+  created: true
+  field_accomplishments: true
+  field_company: true
+  field_dates: true
+  field_position: true
+  field_service_providers: true
+  field_technologies: true
+  field_urls: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true

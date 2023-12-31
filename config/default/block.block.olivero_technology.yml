@@ -1,0 +1,29 @@
+uuid: 39c8b5f3-9844-419c-a79b-aea3ef9fffdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.technology
+  module:
+    - facets
+    - system
+  theme:
+    - olivero
+id: olivero_technology
+theme: olivero
+region: sidebar
+weight: -6
+provider: null
+plugin: 'facet_block:technology'
+settings:
+  id: 'facet_block:technology'
+  label: 'Filter By Technology'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: olivero_technology
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'

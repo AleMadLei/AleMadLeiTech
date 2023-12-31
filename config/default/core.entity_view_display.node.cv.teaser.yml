@@ -1,0 +1,39 @@
+uuid: 4967ae66-260a-4fb4-a359-204a8eda43b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cv.field_order
+    - field.field.node.cv.field_summary
+    - field.field.node.cv.field_technologies
+    - node.type.cv
+  module:
+    - manage_display
+id: node.cv.teaser
+targetEntityType: node
+bundle: cv
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -49
+    region: content
+hidden:
+  created: true
+  field_order: true
+  field_summary: true
+  field_technologies: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true

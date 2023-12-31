@@ -1,0 +1,22 @@
+uuid: a3ac41ae-42a1-4316-a940-536d883222f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - customolivero
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: customolivero_content
+theme: customolivero
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

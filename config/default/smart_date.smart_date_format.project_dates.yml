@@ -1,0 +1,15 @@
+uuid: 76ca364e-4844-42de-a510-f59179100ef6
+langcode: en
+status: true
+dependencies: {  }
+id: project_dates
+label: 'Project dates'
+date_format: 'M Y'
+time_format: ''
+time_hour_format: ''
+allday_label: 'All day'
+separator: ' - '
+join: ', '
+ampm_reduce: '1'
+date_first: '1'
+site_time_toggle: '1'

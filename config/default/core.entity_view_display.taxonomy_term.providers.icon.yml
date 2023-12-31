@@ -1,0 +1,32 @@
+uuid: 98bf4420-80da-4d97-bdd5-e356bdf547d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.icon
+    - field.field.taxonomy_term.providers.field_svg_icon
+    - taxonomy.vocabulary.providers
+  module:
+    - nomarkup
+    - text
+id: taxonomy_term.providers.icon
+targetEntityType: taxonomy_term
+bundle: providers
+mode: icon
+content:
+  field_svg_icon:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: content
+hidden:
+  description: true
+  langcode: true
+  name: true
+  search_api_excerpt: true

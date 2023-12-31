@@ -1,0 +1,10 @@
+uuid: 06eee7c1-082a-462d-9044-63c2237f2139
+langcode: en
+status: true
+dependencies: {  }
+id: project
+label: Project
+icon_uuid: null
+icon_default: null
+description: 'A project that was developed while working for a client.'
+behavior_plugins: {  }

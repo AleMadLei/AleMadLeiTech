@@ -1,0 +1,67 @@
+uuid: f64eb6fd-99b1-4b8e-8b0b-b1c151af0570
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.project.field_accomplishments
+    - field.field.paragraph.project.field_dates
+    - field.field.paragraph.project.field_service_providers
+    - field.field.paragraph.project.field_technologies
+    - field.field.paragraph.project.field_urls
+    - paragraphs.paragraphs_type.project
+  module:
+    - datetime_range
+    - link
+    - text
+id: paragraph.project.default
+targetEntityType: paragraph
+bundle: project
+mode: default
+content:
+  field_accomplishments:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_dates:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '-'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_service_providers:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_technologies:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_urls:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  search_api_excerpt: true

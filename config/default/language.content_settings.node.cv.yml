@@ -1,0 +1,16 @@
+uuid: 002c8832-8a5c-47e7-b8d6-f1414be6dbfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cv
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.cv
+target_entity_type_id: node
+target_bundle: cv
+default_langcode: site_default
+language_alterable: true

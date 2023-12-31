@@ -1,0 +1,43 @@
+uuid: 896975af-087e-4729-bc78-825fed4653f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.icon
+    - field.field.taxonomy_term.technology.field_svg_icon
+    - taxonomy.vocabulary.technology
+  module:
+    - nomarkup
+    - text
+id: taxonomy_term.technology.icon
+targetEntityType: taxonomy_term
+bundle: technology
+mode: icon
+content:
+  field_svg_icon:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: content
+hidden:
+  description: true
+  langcode: true
+  search_api_excerpt: true

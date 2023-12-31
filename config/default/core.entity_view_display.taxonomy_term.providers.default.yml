@@ -1,0 +1,41 @@
+uuid: 31da13aa-d638-466f-b966-56c8c1eeeb96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.providers.field_svg_icon
+    - taxonomy.vocabulary.providers
+  module:
+    - manage_display
+    - text
+id: taxonomy_term.providers.default
+targetEntityType: taxonomy_term
+bundle: providers
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_svg_icon:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -49
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

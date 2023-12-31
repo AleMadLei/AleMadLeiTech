@@ -1,0 +1,24 @@
+uuid: 09456490-1263-4e27-9fed-dae93ea2c32d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - filter.format.basic_html
+    - node.type.cv
+  module:
+    - text
+id: node.cv.field_summary
+field_name: field_summary
+entity_type: node
+bundle: cv
+label: Summary
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

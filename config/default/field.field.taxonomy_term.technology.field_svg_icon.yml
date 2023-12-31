@@ -1,0 +1,24 @@
+uuid: 20433e8b-73f1-4a8a-9e0e-b329b834c9ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_svg_icon
+    - filter.format.full_html
+    - taxonomy.vocabulary.technology
+  module:
+    - text
+id: taxonomy_term.technology.field_svg_icon
+field_name: field_svg_icon
+entity_type: taxonomy_term
+bundle: technology
+label: 'SVG Icon'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

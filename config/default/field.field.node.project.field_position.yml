@@ -1,0 +1,19 @@
+uuid: 4f85c1a9-be0b-4b2b-8b7d-94474b751d55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position
+    - node.type.project
+id: node.project.field_position
+field_name: field_position
+entity_type: node
+bundle: project
+label: Position
+description: 'Job title'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: ac4d296c-0db0-4090-8612-7366bca18fcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.technology
+id: taxonomy_term.technology.status
+field_name: status
+entity_type: taxonomy_term
+bundle: technology
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

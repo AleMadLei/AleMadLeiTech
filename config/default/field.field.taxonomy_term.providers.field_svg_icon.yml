@@ -1,0 +1,24 @@
+uuid: 44d957ea-bd5f-4960-87b4-e39bd1d3cc7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_svg_icon
+    - filter.format.full_html
+    - taxonomy.vocabulary.providers
+  module:
+    - text
+id: taxonomy_term.providers.field_svg_icon
+field_name: field_svg_icon
+entity_type: taxonomy_term
+bundle: providers
+label: 'SVG Icon'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

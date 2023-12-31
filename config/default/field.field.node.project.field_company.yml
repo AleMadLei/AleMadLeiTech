@@ -1,0 +1,19 @@
+uuid: 6bbb9c71-0743-44fb-9be6-8a6e24715df1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company
+    - node.type.project
+id: node.project.field_company
+field_name: field_company
+entity_type: node
+bundle: project
+label: Company
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

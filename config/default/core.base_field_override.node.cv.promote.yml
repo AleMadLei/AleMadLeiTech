@@ -1,0 +1,22 @@
+uuid: 4d3a052e-597f-48fc-921f-e0366122820a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cv
+id: node.cv.promote
+field_name: promote
+entity_type: node
+bundle: cv
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

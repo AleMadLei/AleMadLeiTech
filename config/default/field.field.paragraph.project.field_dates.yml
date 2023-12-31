@@ -1,0 +1,21 @@
+uuid: e33a5e21-6fd1-4a0c-aa14-44c1757423e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_dates
+    - paragraphs.paragraphs_type.project
+  module:
+    - datetime_range
+id: paragraph.project.field_dates
+field_name: field_dates
+entity_type: paragraph
+bundle: project
+label: Dates
+description: 'Leave end date empty if the project is still ongoing.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

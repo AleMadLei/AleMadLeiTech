@@ -1,0 +1,9 @@
+uuid: c0fb2867-4cd5-4767-a7b7-44e59b2670f3
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__user_s_profile__page_users_experience
+name: 'search_api:views_page__user_s_profile__page_users_experience'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

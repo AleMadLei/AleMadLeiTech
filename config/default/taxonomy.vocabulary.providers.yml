@@ -1,0 +1,8 @@
+uuid: 2861ce1e-0c33-459c-bc7f-e3985eb296e4
+langcode: en
+status: true
+dependencies: {  }
+name: Providers
+vid: providers
+description: 'A provider used on a project'
+weight: 0
