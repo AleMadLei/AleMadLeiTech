@@ -8,3 +8,10 @@ services:
     overrides:
       environment:
         DRUSH_OPTIONS_URI: 'http://alemadleitech.lndo.site'
+
+  solr:
+    type: solr:8
+    core: lando
+    portforward: true
+    config:
+      dir: web/modules/contrib/search_api_solr/jump-start/solr8/config-set
