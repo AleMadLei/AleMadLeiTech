@@ -28,10 +28,12 @@ if ($platformsh->hasRelationship('database')) {
 // Solr config.
 if ($platformsh->hasRelationship('solr')) {
   $solr_creds = $platformsh->credentials('solr');
+  $path_core = explode('/', $solr_creds['path']);
+  $core = array_pop($path_core);
   $config['search_api.server.solr']['backend_config']['connector_config']['host'] = $solr_creds['host'];
   $config['search_api.server.solr']['backend_config']['connector_config']['port'] = $solr_creds['port'];
-  $config['search_api.server.solr']['backend_config']['connector_config']['path'] = "/" . $solr_creds['path'];
-  $config['search_api.server.solr']['backend_config']['connector_config']['core'] = NULL;
+  $config['search_api.server.solr']['backend_config']['connector_config']['path'] = '/' . array_shift($path_core);
+  $config['search_api.server.solr']['backend_config']['connector_config']['core'] = $core;
 }
 
 
