@@ -33,7 +33,8 @@
         "drupal/search_api_solr": "^4.3",
         "drupal/search_api_spellcheck": "^4.0",
         "drupal/smart_date": "^4.0",
-        "drush/drush": "^12.4"
+        "drush/drush": "^12.4",
+        "platformsh/config-reader": "^2.4"
     },
     "conflict": {
         "drupal/drupal": "*"
