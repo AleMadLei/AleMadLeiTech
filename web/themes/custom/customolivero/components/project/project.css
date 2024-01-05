@@ -1,0 +1,26 @@
+.project__technologies {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+
+  & svg {
+    display: block;
+    height: 32px;
+    max-width: 48px;
+  }
+}
+
+.project__content {
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+}
+
+
+.project__technologies {
+  flex: 0 0 100px;
+}
+
+.project__accomplishments {
+  flex: 1 0 auto;
+}

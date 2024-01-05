@@ -1,0 +1,16 @@
+<div class="project">
+  <h2 class="project__name">{{ name }}</h2>
+  <strong class="project__position">{{ position }}</strong> - <em class="project__company">{{ company }}</em> - <span>{{ dates }}</span>
+  <div class="project__content">
+    <div class="project__technologies">
+      {{ technologies }}
+    </div>
+    <div class="project__accomplishments">
+      {{ accomplishments }}
+    </div>
+  </div>
+  <button class="project__links-trigger" aria-controls="project-{{ id }}-links" aria-expanded="false">{% block links_trigger %}Add your links trigger label here, e.g: "Show links"{% endblock %}</button>
+  <div id="project-{{ id }}-links" class="project__links hidden">
+    {{ links }}
+  </div>
+</div>

@@ -1,0 +1,42 @@
+name: Project
+$schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
+props:
+  # Props are always an object with keys. Each key is a variable in your
+  # component template.
+  type: object
+
+  # If your component has required properties, you list them here.
+  required:
+    - accomplishments
+    - company
+    - dates
+    - position
+    - technologies
+
+  properties:
+    accomplishments:
+      title: Accomplishments
+      description: The accomplished objectives while working on the project
+      type: string
+    company:
+      title: Company
+      description: Company whose project you worked on
+      type: string
+    dates:
+      title: Dates
+      description: The dates the project was worked on
+      type: string
+    position:
+      title: Position
+      description: Job title you had while working on the project
+      type: string
+    technologies:
+      title: Technologies
+      description: The technologies that were part of the project
+      type: string
+
+slots:
+  links_trigger:
+    title: Links trigger button content
+    description: The content for the links trigger button
+
