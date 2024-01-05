@@ -32,7 +32,7 @@ if ($platformsh->hasRelationship('solr')) {
   $core = array_pop($path_core);
   $config['search_api.server.solr']['backend_config']['connector_config']['host'] = $solr_creds['host'];
   $config['search_api.server.solr']['backend_config']['connector_config']['port'] = $solr_creds['port'];
-  $config['search_api.server.solr']['backend_config']['connector_config']['path'] = '/' . array_shift($path_core);
+  $config['search_api.server.solr']['backend_config']['connector_config']['path'] = '';
   $config['search_api.server.solr']['backend_config']['connector_config']['core'] = $core;
 }
 
