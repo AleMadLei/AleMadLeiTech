@@ -877,10 +877,18 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  *
  * Keep this code block at the end of this file to take full effect.
  */
+
+// Automatic Platform.sh settings.
+if (file_exists($app_root . '/' . $site_path . '/settings.platformsh.php')) {
+  include $app_root . '/' . $site_path . '/settings.platformsh.php';
+}
+
+// For local lando development.
 if (!empty(getenv('LANDO_INFO', TRUE))) {
   include 'lando.settings.php';
 }
 
+// Local development settings.
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
