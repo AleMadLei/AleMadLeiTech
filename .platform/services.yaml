@@ -5,7 +5,11 @@
 
 db:
   type: mariadb:10.4
-  disk: 2048
+  disk: 1792
 
 cache:
   type: redis:6.0
+
+solr:
+  type: solr:8.11
+  disk: 256
