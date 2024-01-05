@@ -25,6 +25,16 @@ if ($platformsh->hasRelationship('database')) {
   ];
 }
 
+// Solr config.
+if ($platformsh->hasRelationship('solr')) {
+  $solr_creds = $platformsh->credentials('solr');
+  $config['search_api.server.solr']['backend_config']['connector_config']['host'] = $solr_creds['host'];
+  $config['search_api.server.solr']['backend_config']['connector_config']['port'] = $solr_creds['port'];
+  $config['search_api.server.solr']['backend_config']['connector_config']['path'] = "/" . $solr_creds['path'];
+  $config['search_api.server.solr']['backend_config']['connector_config']['core'] = '';
+}
+
+
 // Enable verbose error messages on development branches, but not on the production branch.
 // You may add more debug-centric settings here if desired to have them automatically enable
 // on development but not production.
@@ -162,13 +172,4 @@ foreach ($platformsh->variables() as $name => $value) {
       }
       break;
   }
-}
-
-
-if ($platformsh->hasRelationship('solr')) {
-  $solr_creds = $platformsh->credentials('solr');
-  $config['search_api.server.solr']['backend_config']['connector_config']['host'] = $solr_creds['host'];
-  $config['search_api.server.solr']['backend_config']['connector_config']['port'] = $solr_creds['port'];
-  $config['search_api.server.solr']['backend_config']['connector_config']['path'] = "/" . $solr_creds['path'];
-  $config['search_api.server.solr']['backend_config']['connector_config']['core'] = '';
 }
