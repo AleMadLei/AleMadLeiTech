@@ -1,0 +1,7 @@
+{
+  "patches": {
+    "drupal/facets": {
+      "#3336646: PHP 8.2 compatibility for the 2.0.x branch": "https://git.drupalcode.org/project/facets/-/merge_requests/129.diff"
+    }
+  }
+}

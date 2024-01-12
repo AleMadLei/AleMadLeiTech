@@ -2,6 +2,7 @@ name: alemadleitech
 recipe: drupal10
 config:
   webroot: ./web
+  php: 8.2
 
 services:
   appserver:
