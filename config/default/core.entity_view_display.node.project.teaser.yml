@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.project.field_dates
     - field.field.node.project.field_position
     - field.field.node.project.field_service_providers
+    - field.field.node.project.field_skills
     - field.field.node.project.field_technologies
     - field.field.node.project.field_urls
     - node.type.project
@@ -40,6 +41,7 @@ hidden:
   field_dates: true
   field_position: true
   field_service_providers: true
+  field_skills: true
   field_technologies: true
   field_urls: true
   langcode: true

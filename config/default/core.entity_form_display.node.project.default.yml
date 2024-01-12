@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.project.field_dates
     - field.field.node.project.field_position
     - field.field.node.project.field_service_providers
+    - field.field.node.project.field_skills
     - field.field.node.project.field_technologies
     - field.field.node.project.field_urls
     - node.type.project
@@ -60,6 +61,16 @@ content:
   field_service_providers:
     type: entity_reference_autocomplete
     weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_skills:
+    type: entity_reference_autocomplete
+    weight: 26
     region: content
     settings:
       match_operator: CONTAINS

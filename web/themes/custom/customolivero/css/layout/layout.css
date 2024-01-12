@@ -1,0 +1,14 @@
+@media (min-width: 62.5rem) {
+  .sidebar-grid > .site-main {
+    grid-column: 3 / 12;
+  }
+}
+
+
+.path-experience .grid-full .region--sidebar {
+  order: -1;
+
+  @media (min-width: 62.5rem) {
+    order: 0;
+  }
+}

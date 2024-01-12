@@ -86,13 +86,19 @@
     company: content.field_company,
     dates: content.field_dates,
     links: content.field_urls,
+    id: node.id(),
     name: content.title,
     position: content.field_position,
+    service_providers: content.field_service_providers,
+    skills: content.field_skills,
     technologies: content.field_technologies,
   } only %}
     {% block links_trigger %}{{ 'Show project links'|t }}{% endblock %}
   {% endembed %}
 
   {# Prints any other field added trough the UI or hooks. #}
-  {{ content|without('field_accomplishments', 'field_company', 'field_dates', 'field_position', 'title', 'field_technologies', 'field_urls') }}
+  {{ content|without(
+    'field_accomplishments', 'field_company', 'field_dates', 'field_position', 'title',
+    'field_service_providers', 'field_skills', 'field_technologies', 'field_urls'
+  ) }}
 </article>
